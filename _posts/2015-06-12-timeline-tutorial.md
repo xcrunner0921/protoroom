@@ -19,6 +19,7 @@ events:
     date: "September 2007 - August 2013"
     description: "Started coding"
 
+
 # First image of the Timeline
 
 timeline-img: "/img/timeline/default.png"

@@ -10,20 +10,23 @@
 
     {% include navigation.html %}
 
-    {% include header.html %}
+    % include header.html %}
 
     {% for p in site.pages_list %}
       {% for page in site.pages %}
         {% if p[1] == page.section-type %}
-          <!-- test {{ page.path }} -->
           {% include {{ page.path }} %}
-
         {% endif %}
       {% endfor %}
     {% endfor %}
 
+      <div>
+          {% for post in paginator.posts %}
+            {% include post-list.html%}
+          {% endfor %}
+        </div>
 
-    {% include footer.html %}
+     {% include footer.html %}
 
     {% include js.html %}
 
